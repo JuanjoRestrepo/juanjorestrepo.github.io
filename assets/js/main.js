@@ -59,6 +59,13 @@ const contactForm = document.getElementById('contact-form'),
 
             // show message
             contactMessage.textContent = 'Please fill in all the input fields';
+
+            // remove message after 5 seconds
+            setTimeout(() => {
+                contactMessage.textContent = 'Message';
+                contactMessage.classList.remove('color-dark');
+            }, 5000);
+
         } else {
             // ServiceID - templateID - #form - publickey
             emailjs
@@ -75,7 +82,8 @@ const contactForm = document.getElementById('contact-form'),
 
                     // remove message after 5 seconds
                     setTimeout(() => {
-                        contactMessage.textContent = '';
+                        contactMessage.textContent = 'Message';
+                        contactMessage.classList.remove('color-light');
                     }, 5000);
                     
                     // Clear input fields
