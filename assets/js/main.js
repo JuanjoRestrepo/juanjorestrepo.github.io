@@ -101,7 +101,8 @@ const contactForm = document.getElementById('contact-form'),
                     
                     // Remove error message after 5 seconds
                     setTimeout(() => {
-                        contactMessage.textContent = '';
+                        contactMessage.textContent = 'Message';
+                        contactMessage.classList.remove('color-dark');
                     }, 5000);
                 });
         }
