@@ -570,7 +570,9 @@ input {
 /*=============== Projects ===============*/
 .project__categories{
     display: flex;
+    flex-wrap: wrap;
     column-gap: 3rem;
+    row-gap: 0.25rem;
     margin-bottom: 1.875rem;
 }
 
@@ -870,6 +872,15 @@ input {
 /*=============== BreakPoints ===============*/
 /* for large devices */
 @media screen and (max-width: 1200px) {
+    :root{
+        --fs-h1: 2.25rem;
+        --fs-h2: 1.75rem;
+        --fs-lg: 1rem;
+        --fs-base: 0.938rem;
+        --fs-sm: 0.813rem;
+        --fs-xs: 0.687em;
+    }
+
     .container{
         max-width: 960px;
     }
@@ -969,13 +980,30 @@ input {
 
 }
 
-
-
 /* for medium devices */
 @media screen and (max-width: 768px) {
-    .contact__container {
+    .container{
+        max-width: 540px;
+    }
+
+    .contact__container,
+    .posts__container,
+    .skills__container,
+    .services__container{
         grid-template-columns: 1fr;
-        row-gap: 3rem;
+    }
+
+    .skills__container{
+        row-gap: 3.75rem;
+    }
+
+    .project__data{
+        padding: 2rem 1.25rem 1.5rem 1.25rem;
+    }
+
+    .contact__container {
+        row-gap: 2rem;
+
     }
     
     .contact__info {
@@ -989,8 +1017,38 @@ input {
 }
 
 @media screen and (max-width: 576px) {
+    .home{
+        padding-top: 4.4rem;
+    }
+
+    .project__categories{
+        column-gap: 1.5rem;
+    }
+
+    .tags li{
+        margin-bottom: 0.6rem;
+    }
 }
 
 /* for small devices */
 @media screen and (max-width: 350px) {
+    :root{
+        --fs-h1: 2rem;
+    }
+
+    .home__work{
+        font-size: var(--fs-sm);
+    }
+
+    .home__list{
+        font-size: 0.875rem;
+    }
+
+    .home__list dd{
+        padding-left: 5.75rem;
+    }
+
+    .home__social-link{
+        font-size: 1.3rem;
+    }
 }
