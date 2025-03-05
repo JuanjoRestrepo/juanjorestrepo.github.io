@@ -11,8 +11,13 @@
   --primary-color-alt: #575757;
   --linear-gradient: linear-gradient(
     54deg, 
+<<<<<<< HEAD
   rgb(45, 45, 45, 0.95) 34%, 
   rgb(45, 45, 45, 0.95) 
+=======
+  rgba(45, 45, 45, 0.95) 34%, 
+  rgba(45, 45, 45, 0.95) 
+>>>>>>> 40362d3 (Email sent done)
   ); 
   --title-color: #4a4a4a;
   --text-color: #555;
@@ -685,13 +690,172 @@ input {
     }
 }
 
+<<<<<<< HEAD
+=======
+/*=============== Contact ===============*/
+.contact{
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+
+.contact::before{
+    content: '';
+    background-color: rgba(30, 30, 30, 0.9);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(2px);
+}
+
+.contact__content{
+    z-index: 10;
+    position: relative;   
+}
+
+.contact__container{
+    grid-template-columns: 1fr 3fr;
+    column-gap: 3.75rem;
+    padding-top: 1.25rem;
+}
+
+.contact .section__title,
+.contact__list,
+.contact__social-link,
+::placeholder,
+.contact__input,
+.contact__form-title,
+.footer__copy{
+    color: #fff;
+    font-family: var(--mono-font);
+}
+
+.contact .section__title {
+    margin-bottom: 2.5rem;
+}
+
+.contact__list{
+    margin-bottom: 2.5rem;
+}
+
+.contact__list dt{
+    float: left;
+    font-weight: var(--bold);
+    text-transform: uppercase;
+}
+
+.contact__list dd{
+    padding-left: 6.25rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__social li{
+    margin-bottom: 0.75rem;
+}
+
+.contact__social-link{
+    font-family: var(--mono-font);
+    color: #fff;
+}
+
+.contact__form{
+    position: relative;
+}
+
+.contact__form-title{
+    margin-bottom: 1.2rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__input-div{
+    margin-bottom: 0.94rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__input{
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 3px;
+    padding: 0.625rem;
+    background-color: transparent;
+    color: #fff;
+}
+
+.textarea{
+    height: 7.2rem;
+    resize: none;
+}
+
+.contact__message{
+    position: absolute;
+    bottom: 33%;
+    left: 10%;
+    font-family: var(--mono-font);
+    color: #fff; 
+    font-size: var(--fs-xs);
+    opacity: 0.4;
+}
+
+.contact__button{
+    margin-top: 1.875rem;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 1px 29px rgb(0 0 0 / 40%);
+    background-color: #555;
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.contact__button:hover {
+    background-color: #444;
+    transform: translateY(-2px);
+}
+
+.contact__button:active {
+    transform: translateY(1px);
+    box-shadow: 0 1px 15px rgb(0 0 0 / 30%);
+}
+
+.footer__copy{
+    opacity: 0.4;
+    margin-top: 3.75rem;
+    text-align: center;
+    color: #fff;
+    font-size: var(--fs-xs);
+}
+
+/* Color message utilities */
+.color-light {
+    color: #0f0; /* Green for success */
+}
+
+.color-dark {
+    color: #f00; /* Red for error */
+}
+
+>>>>>>> 40362d3 (Email sent done)
 /*=============== Projects ===============*/
 
 /*=============== Testimonials ===============*/
 
 /*=============== Blog ===============*/
 
+<<<<<<< HEAD
 /*=============== Contact ===============*/
+=======
+
+>>>>>>> 40362d3 (Email sent done)
 
 /*=============== Blog Details ===============*/
 
@@ -710,6 +874,22 @@ input {
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
+<<<<<<< HEAD
+=======
+    .contact__container {
+        grid-template-columns: 1fr;
+        row-gap: 3rem;
+    }
+    
+    .contact__info {
+        height: auto;
+    }
+    
+    .contact__social {
+        margin-top: 2rem;
+        padding-bottom: 0;
+    }
+>>>>>>> 40362d3 (Email sent done)
 }
 
 @media screen and (max-width: 576px) {
