@@ -7,7 +7,7 @@
 
   /*========== Colors ==========*/
   --title-color: #4a4a4a;
-
+  --primary-color: #4a4a4a;
   --primary-color-alt: #575757;
   --linear-gradient: linear-gradient(
     54deg, 
@@ -111,8 +111,8 @@ input {
 }
 
 .section {
-  padding-top: 3.75rem;
-  padding-bottom: 3.75rem;;
+  padding-top: 4rem;
+  padding-bottom: 4rem;;
 }
 
 .section__title{
@@ -146,6 +146,7 @@ input {
     left: 0;
     width: 100%;
     z-index: 100;
+    transition: 0.3s;
 }
 
 .nav{
@@ -201,6 +202,32 @@ input {
 .active-link::after{
     opacity: 1;
 }
+
+/*Scroll Header */
+.scroll-header{
+    position: fixed;
+    background-color: var(--bg-color);
+    box-shadow: 0 5px 8px 0 rgb(0 0 0 / 14%);
+}
+
+.scroll-header .nav__link{
+    color: var(--text-color);
+}
+
+.scroll-header .nav{
+    align-items: center;
+}
+
+.scroll-header .nav__link::after{
+    background-color: var(--text-color);
+}
+
+.scroll-header .nav__link:hover,
+.scroll-header .active-link{
+    color: var(--primary-color);
+}
+
+
 
 /*=============== Home ===============*/
 .home {
@@ -320,15 +347,6 @@ input {
     align-items: center;
     column-gap: 0.3rem;
 }
-
-
-/* Active Link */
-
-/* Scroll Header */
-
-
-
-
 
 
 /*=============== Services ===============*/
@@ -850,15 +868,108 @@ input {
 /*=============== Style Switcher ===============*/
 
 /*=============== BreakPoints ===============*/
-
-
-
 /* for large devices */
 @media screen and (max-width: 1200px) {
+    .container{
+        max-width: 960px;
+    }
+    
+    .home__container{
+        grid-template-columns: 5fr 7fr;    
+    }
+
+    .skills__container,
+    .services__container{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 1.875rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
+    .container{
+        max-width: 720px;
+    }
+    
+    .nav__menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-100%);
+    }
+
+    .nav__list{
+        flex-direction: column;
+        row-gap: 2.125rem;
+        text-align: center;
+    }
+
+    .nav__toggle,
+    .nav__close{
+        display: block;
+    }
+
+    .nav__close{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 2.7rem;
+        left: 8%;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .nav__toggle{
+        color: #fff;
+        font-size: 1.25rem;
+        opacity: 0.5;
+    }
+
+    .scroll-header .nav__toggle{
+        color: var(--title-color);
+        opacity: 1;
+    }
+
+    .home{
+        padding-top: 5.25rem;
+    }
+
+    .home__img{
+        display: none;
+    }
+
+    .section{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .projects__item,
+    .resume__container,
+    .home__container{
+        grid-template-columns: 1fr;
+    }
+
+    .resume__container{
+        row-gap: 3.75rem;
+    }
+
+    .posts__container{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 1.875rem;
+    }
+
+    .contact__container{
+        grid-template-columns: 5fr 7fr;
+    }
+
 }
+
+
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
