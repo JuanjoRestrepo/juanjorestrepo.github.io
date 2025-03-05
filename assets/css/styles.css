@@ -913,6 +913,11 @@ input {
         justify-content: center;
         align-items: center;
         transform: translateX(-100%);
+        transition: 0.3s;
+    }
+
+    .show-menu{
+        transform: translateX(0);
     }
 
     .nav__list{
