@@ -11,13 +11,8 @@
   --primary-color-alt: #575757;
   --linear-gradient: linear-gradient(
     54deg, 
-<<<<<<< HEAD
-  rgb(45, 45, 45, 0.95) 34%, 
-  rgb(45, 45, 45, 0.95) 
-=======
   rgba(45, 45, 45, 0.95) 34%, 
   rgba(45, 45, 45, 0.95) 
->>>>>>> 40362d3 (Email sent done)
   ); 
   --title-color: #4a4a4a;
   --text-color: #555;
@@ -690,8 +685,6 @@ input {
     }
 }
 
-<<<<<<< HEAD
-=======
 /*=============== Contact ===============*/
 .contact{
     background: url(../img/bg.jpg);
@@ -844,18 +837,13 @@ input {
     color: #f00; /* Red for error */
 }
 
->>>>>>> 40362d3 (Email sent done)
 /*=============== Projects ===============*/
 
 /*=============== Testimonials ===============*/
 
 /*=============== Blog ===============*/
 
-<<<<<<< HEAD
-/*=============== Contact ===============*/
-=======
 
->>>>>>> 40362d3 (Email sent done)
 
 /*=============== Blog Details ===============*/
 
@@ -874,8 +862,6 @@ input {
 
 /* for medium devices */
 @media screen and (max-width: 768px) {
-<<<<<<< HEAD
-=======
     .contact__container {
         grid-template-columns: 1fr;
         row-gap: 3rem;
@@ -889,7 +875,6 @@ input {
         margin-top: 2rem;
         padding-bottom: 0;
     }
->>>>>>> 40362d3 (Email sent done)
 }
 
 @media screen and (max-width: 576px) {

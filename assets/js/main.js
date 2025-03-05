@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-const name = 'adam';
-=======
 /*============= Mixitup Filter ============= */
 let mixerProjects = mixitup('.projects__container', {
    selectors: {
@@ -79,4 +76,3 @@ const contactForm = document.getElementById('contact-form'),
     };
 
     contactForm.addEventListener('submit', sendEmail);
->>>>>>> 40362d3 (Email sent done)
