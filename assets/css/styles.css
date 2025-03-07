@@ -263,7 +263,7 @@ input {
 }
 
 .home__img{
-    width: 60%;
+    width: 80%;
     height: 380px;
     object-fit: cover;
     border-radius: 0.3rem;
